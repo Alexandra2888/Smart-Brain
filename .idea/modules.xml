@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Smart-Brain.iml" filepath="$PROJECT_DIR$/.idea/Smart-Brain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/smart-brain-master.iml" filepath="$PROJECT_DIR$/.idea/smart-brain-master.iml" />
     </modules>
   </component>
 </project>

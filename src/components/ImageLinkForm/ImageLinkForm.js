@@ -1,28 +1,23 @@
 import React from 'react';
-import '../ImageLinkForm/ImageLinkForm.css';
+import './ImageLinkForm.css';
 
-// form for user to submit an image via URL for face detection
-function ImageLinkForm( { onInputHandler, onSubmitHandler }) {
-    return (
-        <div>
-            <p className='f3 center'>
-                Enter an image URL to detect faces
-            </p>
-            <div className='center'>
-                <div className='pa4 br3 shadow-5 center form'>
-                    <input
-                        className='f3 pa2 w-70 center'
-                        type='text'
-                        onChange={onInputHandler} />
-                    <button
-                        className='w-30 grpw f4 link ph3 pv2 dib white bg-light-purple'
-                        onClick={onSubmitHandler}>
-                        Detect
-                    </button>
-                </div>
-            </div>
+const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
+  return (
+    <div>
+      <p className='f3'>
+        {'This Magic Brain will detect faces in your pictures. Git it a try.'}
+      </p>
+      <div className='center'>
+        <div className='form center pa4 br3 shadow-5'>
+          <input className='f4 pa2 w-70 center' type='tex' onChange={onInputChange}/>
+          <button
+            className='w-30 grow f4 link ph3 pv2 dib white bg-light-purple'
+            onClick={onButtonSubmit}
+          >Detect</button>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
 
-export default ImageLinkForm
+export default ImageLinkForm;
